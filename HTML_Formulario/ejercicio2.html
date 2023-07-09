@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ejercicio2.css">
+
+</head>
+
+<body>
+    <form action="Ejercicio2b.html" method="get" name="formulario">
+        <h1>Ejercicio 2. Venta de entradas</h1>
+
+        <fieldset>
+            <legend class="legend">Entradas</legend>
+
+            <label for="niveles">Venta de entradas</label>
+
+            <select name="Número de entradas" id="numeroEntradas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <br><br>
+            <label for="niveles2">Categoria</label><br>
+            <select name="Pista" id="pista">
+                <option value="1">Pista general</option>
+                <option value="2">Pista central</option>
+                <option value="3">Pista perimetral</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend class="legend">Datos del comprador</legend>
+            <p>Nombre <input type="text" name="nombre"></p>
+            <p>Apellidos <input type="text" name="apellido"></p>
+            <p>Email <input type="text" name="email"></p>
+            <p>Fecha <input type="date" name="fecha"></p>
+            <p>Adjunta DNI <input type="file"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend class="legend">Pago</legend>
+            <p>Selecciona método de pago</p>
+            <p><input type="radio" name="tipo"><img src="masterLogo.png"></p>
+            <p><input type="radio" name="tipo"><img src="visaLogo.png"></p>
+            <p><input type="radio" name="tipo"><img src="paypalLogo.png"></p>
+            <p><input type="radio" name="tipo"><img src="bizumLogo.jpg"></p>
+
+            <p><input type="checkbox" name="terminos">Acepta las condiciones de la compra</p>
+
+
+            <input id="boton" type="submit" name="enviar" value="Proceder al pago">
+        </fieldset>
+
+    </form>
+</body>
